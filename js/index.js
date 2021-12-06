@@ -104,9 +104,9 @@ function renderPrice() {
 
   let totalPrice = 10;
 
-  for (const tmp in state) {
-    if (state[tmp]) {
-      document.getElementsByTagName("ul")[1].innerHTML = `$${prices[tmp]} ${tmp}<br>`;
+  for (const tmp in state) {  
+    if (state[tmp]){
+      document.getElementsByTagName("ul")[1].innerHTML = `<li>$${prices[tmp]} ${tmp}</li><br>`;
       totalPrice += prices[tmp];
     }
   }
